@@ -1,0 +1,8 @@
+export const CREATE_DOG = "CREATE_DOG"
+export const GET_DOGS = "GET_DOGS"
+export const GET_NAME = "GET_NAME"
+export const GET_TEMPERAMENTS = "GET_TEMPERAMENTS"
+export const FILTER = "FILTER"
+export const ORDER = "ORDER"
+export const ORDER_WEIGHT = "ORDER_WEIGHT"
+export const FILTER_BD_API = "FILTER_DB_API"

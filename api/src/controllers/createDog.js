@@ -11,8 +11,8 @@ const createDog = async (name, height, weight, lifeSpan, image, temperament) => 
   });
 
   temperament.forEach(async (temperament) => {
-    const temperamento = await Temperament.findOne({ where: { name: temperament }});
-    await response.setTemperament(temperamento);
+    const temperamento = await Temperament.findOne({ where: { name: temperament } });
+    await response.setTemperaments(temperamento);
   });
 
   return response;

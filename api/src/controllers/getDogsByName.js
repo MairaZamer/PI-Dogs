@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { Dog } = require('../db');
+const { Dog, Temperament} = require('../db');
 
 const getDogsByName = async(name) => {
 
