@@ -1,0 +1,11 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1%;
+    background: linear-gradient(rgba(220, 89, 224, 0), rgba(214, 99, 230, 0.7));
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    height: 100%;
+    width: 100vw;
+}

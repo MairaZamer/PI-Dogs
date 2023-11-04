@@ -14,10 +14,6 @@ module.exports = (sequelize) => {
       allowNull: false,
       primaryKey: true,
     },
-    image:{
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     height:{
       type: DataTypes.STRING,
       allowNull: false,
@@ -26,7 +22,11 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    lifeSpan:{
+    life_span:{
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    image_url:{
       type: DataTypes.STRING,
       allowNull: false,
     }

@@ -9,7 +9,6 @@ const getTemperaments = async() => {
     dog?.temperament?.split(',').forEach(temperament => uniqueTemperaments.add(temperament)
     ));
    
-    console.log(temperamentInfo);
     
     const allTemperaments = [...uniqueTemperaments].map(temperament =>
         ({name: temperament}));

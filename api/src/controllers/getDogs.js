@@ -13,11 +13,11 @@ const getDogs = async () => {
       name: dog.name,
       weight: dog.weight,
       height: dog.height,
-      lifeSpan: dog.lifeSpan,
+      life_span: dog.life_span,
       image: dog.image.url,
-      temperament: dog.Temperament.map((element) => element.dataValues.name)
+      temperament: dog.temperaments.map((element) => element.dataValues.name)
         .join(" , ")
-        .trim()
+        .trim(),
     };
   });
 

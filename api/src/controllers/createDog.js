@@ -1,13 +1,13 @@
 const { Dog, Temperament } = require("../db");
 
-const createDog = async (name, height, weight, lifeSpan, image, temperament) => {
+const createDog = async (name, height, weight, life_span, image, temperament) => {
 
   const response = await Dog.create({
     name,
     height,
     weight,
-    lifeSpan,
-    image
+    life_span,
+    image,
   });
 
   temperament.forEach(async (temperament) => {

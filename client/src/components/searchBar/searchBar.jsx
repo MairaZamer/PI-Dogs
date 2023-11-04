@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { getDogsByName, getDogs} from '../../redux/actions';
 import { useDispatch } from 'react-redux';
-
+import { Link } from 'react-router-dom';
+import style from './searchBar.module.css'
 
 const SearchBar = () => {
     const [name, setName] = useState('');
@@ -30,9 +31,14 @@ const SearchBar = () => {
 
     return(
         <div>
-        <input type='text' onChange={handleName} />
-        <button onClick={handleOnClick}>Buscar</button>
+        <div >
+        <input type='text' onChange={handleName} value={name} />
+        <button className={style.button} onClick={handleOnClick}>Buscar</button>
         <button onClick={reset} >Resetear</button>
+        <button>
+        <Link to= '/form'>Crear Perro</Link>
+        </button>
+        </div>
         </div>
     )
 }

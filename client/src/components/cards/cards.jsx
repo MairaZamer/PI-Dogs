@@ -1,9 +1,11 @@
 import Card from "../card/card"
+import style from './cards.module.css'
 
 const Cards = ({newDogs}) => {
     return(
-        <div>
-            {newDogs?.map(( { id, name, height, weight, lifeSpan, reference_image_id, temperament } ) => {
+        <div >
+        <div className={style.container}>
+            {newDogs?.map(( { id, name, height, weight, life_span, reference_image_id, temperament } ) => {
                 return (
 
                     <Card
@@ -12,13 +14,14 @@ const Cards = ({newDogs}) => {
                     name={name}
                     height={height}
                     weight={weight}
-                    lifeSpan={lifeSpan}
+                    life_span={life_span}
                     reference_image_id={reference_image_id}
                     temperament={temperament}
                     />
                     
                 )
             })}
+        </div>
         </div>
     )
 }

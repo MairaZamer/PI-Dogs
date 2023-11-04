@@ -1,4 +1,4 @@
-import { CREATE_DOG, GET_DOGS, GET_BY_ID, GET_NAME, GET_TEMPERAMENTS, FILTER, FILTER_BD_API, ORDER, ORDER_WEIGHT } from "./actions-types";
+import { CREATE_DOG, GET_DOGS, GET_NAME, GET_TEMPERAMENTS, FILTER, FILTER_BD_API, ORDER, ORDER_WEIGHT } from "./actions-types";
 import axios from "axios";
 
 export const getDogs =() =>{
@@ -13,7 +13,7 @@ export const getDogs =() =>{
 
 export const getDogsByName = (name) =>{
     return async(dispatch) => {
-        const response = await axios.get(`http://localhost:3001/name?name=${name}`);
+        const response = await axios.get(`http://localhost:3001/dogs/name?name=${name}`);
         return dispatch({
             type: GET_NAME,
             payload: response.data,
