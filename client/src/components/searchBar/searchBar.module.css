@@ -1,5 +1,13 @@
 .button{
-    background-color: rgb(226, 159, 159);
+    background-color: rgb(177, 159, 226);
     color: rgb(0, 0, 0);
     border-radius: 10%;
+    border-color: rgb(70, 31, 160);
+}
+.container{
+    background-color: rgb(161, 127, 255);
+}
+.input{
+    border-radius: 12%;
+    background-color: rgb(247, 242, 252);
 }

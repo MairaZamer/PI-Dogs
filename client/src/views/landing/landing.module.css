@@ -1,13 +1,12 @@
-.img{
-    max-width: 300%;
-    height: 300%;
-   
+.img {
+  max-width: 300%;
+  height: 300%;
+
 }
 
 .button {
   background-color: #EA4C89;
   border-radius: 8px;
-  border-style: none;
   box-sizing: border-box;
   color: #FFFFFF;
   display: inline-block;
@@ -18,13 +17,12 @@
   padding: 10px 16px;
   position: relative;
   text-align: center;
-  transition: color 100ms;
-  vertical-align: baseline;
-  touch-action: manipulation;
-  background-color: hsl(337, 79%, 73%);
+  background-color: #EA4C89;
 }
 
-.title{
-    background-color: hsl(337, 79%, 73%);
-    color:#ffffff
+.title {
+  padding: 25px;
+  margin: 0;
+  background-color: #EA4C89;
+  color: #ffffff;
 }

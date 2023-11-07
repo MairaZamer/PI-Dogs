@@ -1,8 +1,8 @@
 import { CREATE_DOG, GET_DOGS, GET_NAME, GET_TEMPERAMENTS, FILTER, FILTER_BD_API, ORDER, ORDER_WEIGHT } from "./actions-types";
 import axios from "axios";
 
-export const getDogs =() =>{
-    return async(dispatch) =>{
+export const getDogs = () => {
+    return async (dispatch) => {
         const response = await axios.get('http://localhost:3001/dogs');
         return dispatch({
             type: GET_DOGS,
@@ -11,8 +11,8 @@ export const getDogs =() =>{
     };
 };
 
-export const getDogsByName = (name) =>{
-    return async(dispatch) => {
+export const getDogsByName = (name) => {
+    return async (dispatch) => {
         const response = await axios.get(`http://localhost:3001/dogs/name?name=${name}`);
         return dispatch({
             type: GET_NAME,
@@ -21,8 +21,8 @@ export const getDogsByName = (name) =>{
     };
 };
 
-export const createAllDogs = (formData) =>{
-    return async(dispatch) =>{
+export const createAllDogs = (formData) => {
+    return async (dispatch) => {
         try {
             const response = await axios.post('http://localhost:3001/dogs', formData);
             alert('Ya se creo el perro')
@@ -38,37 +38,37 @@ export const createAllDogs = (formData) =>{
 
 export const temperamento = () => {
     return async (dispatch) => {
-          const response = await axios.get(`http://localhost:3001/temperaments`);
-          return dispatch({
-                type: GET_TEMPERAMENTS,
-                payload: response.data,
-          });
+        const response = await axios.get(`http://localhost:3001/temperaments`);
+        return dispatch({
+            type: GET_TEMPERAMENTS,
+            payload: response.data,
+        });
     }
 }
 
-export const filterTemper = (name) =>{
-    return{
+export const filterTemper = (name) => {
+    return {
         type: FILTER,
         payload: name
     }
 }
 
-export const filterDbApi = (value) =>{
-    return{
+export const filterDbApi = (value) => {
+    return {
         type: FILTER_BD_API,
         payload: value
     }
 }
 
 export const orderCards = (order) => {
-    return{
+    return {
         type: ORDER,
         payload: order
     }
 }
 
-export const orderWeight = (Order) =>{
-    return{
+export const orderWeight = (Order) => {
+    return {
         type: ORDER_WEIGHT,
         payload: Order,
     }

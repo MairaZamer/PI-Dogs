@@ -57,11 +57,11 @@ const rootReducer = (state = inicialState, action) => {
       const response = [
         ...copyDogs.filter((dog) => {
           return (
-            dog.temperamet &&
+            dog.temperament &&
             dog.temperament
               .split(",")
               .map((element) => element.trim())
-              .includes(action.payload)
+              .includes(action.payload.trim())
           );
         }),
       ];

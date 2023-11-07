@@ -14,7 +14,7 @@ const getDogs = async () => {
       weight: dog.weight,
       height: dog.height,
       life_span: dog.life_span,
-      image: dog.image.url,
+      image_url: dog.image_url,
       temperament: dog.temperaments.map((element) => element.dataValues.name)
         .join(" , ")
         .trim(),
@@ -24,7 +24,7 @@ const getDogs = async () => {
   const response = await axios.get(`https://api.thedogapi.com/v1/breeds?api_key=${API_KEY}`);
   const result = response.data;
   return newDogs.concat(result)
-  
+
 };
 
 module.exports = getDogs;

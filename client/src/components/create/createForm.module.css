@@ -6,15 +6,17 @@
   color: black;
   min-width: 100vw;
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url('./foto1.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url('../../image/foto1.jpg');
   background-size: cover;
   background-position: center;
 }
+
 .mainTitle {
   margin: 5%;
   color: #000000;
   font-family: 'ClassicCustom', Arial, sans-serif;
 }
+
 .container {
   width: 520px;
   background: transparent;
@@ -24,28 +26,29 @@
   color: #000000;
   border-radius: 10px;
   padding: 30px 40px;
-  }
-  
-  .wrapperLogin h1 {
-    font-size: 35px;
-    text-align: center;
+}
+
+.wrapperLogin h1 {
+  font-size: 35px;
+  text-align: center;
 }
 
 .wrapperLogin .formGroup {
-    position: relative;
-    width: 100%;
-    /* height: 50px; */
-    margin: 30px 0;
+  position: relative;
+  width: 100%;
+  /* height: 50px; */
+  margin: 30px 0;
 }
 
 .formGroup input {
-    width: 100%;
-    height: 50%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(0, 0, 0, 0.2);
-    font-size: 16px;
-    color: #d47878;
-    padding: 15px 10px 10px 10px;
+  width: 100%;
+  height: 50%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  padding: 15px 10px 10px 10px;
 }

@@ -3,9 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import dog from '../../image/dog.gif'
 
 const Landing = () => {
-     
+
     const navigate = useNavigate();
-    const navigateHandler = () =>{
+    const navigateHandler = () => {
         navigate('/home');
     }
 
@@ -13,12 +13,12 @@ const Landing = () => {
         <div>
             <h1 className={style.title}>Proyecto individual: dogs♥ </h1>
             <div className={style.img}>
-            <img src= {dog} />
+                <img src={dog} />
             </div>
             <div >
-            <button className={style.button} onClick={navigateHandler}> 
-                 Home 
-            </button>
+                <button className={style.button} onClick={navigateHandler}>
+                    Home
+                </button>
             </div>
         </div>
     )

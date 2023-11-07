@@ -8,27 +8,27 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    id:{
+    id: {
       type: DataTypes.UUID,
       defaultValue: DataTypes.UUIDV4,
       allowNull: false,
       primaryKey: true,
     },
-    height:{
+    height: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    weight:{
+    weight: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    life_span:{
+    life_span: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    image_url:{
+    image_url: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     }
-  }, { timestamps: false } );
+  }, { timestamps: false });
 };
